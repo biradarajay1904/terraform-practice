@@ -19,3 +19,7 @@ variable "rds_security_group_id" {  default = "" }
 variable "rds_subnet_group_name" { default = "" }
 variable "rds_multi_az" { default = false }
 
+
+
+# ECR VARIABLES
+variable "ecr_repo_name" { default = "my-ecr-repo" }

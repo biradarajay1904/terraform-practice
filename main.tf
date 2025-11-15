@@ -28,3 +28,9 @@ module "rds" {
 }
 
 
+module "ecr" {
+  source    = "./modules/ECR"
+  repo_name = var.ecr_repo_name
+}
+
+
