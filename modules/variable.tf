@@ -3,10 +3,26 @@ variable "project" {}
 variable "env" {}
 variable "vpc_cidr" {}
 variable "public_subnets" { type = list(string) }
+variable "private_subnets" { type = list(string) }
 
 
-#   variable "region" { default = "ap-south-1" }
-# variable "project"        { default = "practice" }
-# variable "env"            { default = "dev" }
-# variable "vpc_cidr"       { default = "10.0.0.0/16" }
-# variable "public_subnets" { default = ["10.0.1.0/24", "10.0.2.0/24"] }
+
+# RDS VARIABLES
+
+variable "rds_allocated_storage" {}
+variable "rds_engine" {}
+variable "rds_engine_version" {}
+variable "rds_instance_class" {}
+variable "rds_db_name" {}
+variable "rds_username" {}
+variable "rds_password" {}
+variable "rds_parameter_group_name" {}
+variable "rds_security_group_id" {}
+variable "rds_subnet_group_name" {}
+variable "rds_multi_az" {}
+
+
+
+
+
+
