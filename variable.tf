@@ -23,3 +23,25 @@ variable "rds_multi_az" { default = false }
 
 # ECR VARIABLES
 variable "ecr_repo_name" { default = "my-ecr-repo" }
+
+
+# EKS VARIABLES
+
+variable "cluster_name" { default = "my-eks-cluster" }
+variable "node_group_name" { default = "my-node-group" }
+variable "node_instance_type" { default = "t3.medium" }
+variable "desired_capacity" { default = 2 }
+variable "max_size" { default = 3 }
+variable "min_size" { default = 1 }
+variable "key_pair" { default = "my-key-pair"}
+variable "asg_security_group_id" { default = "" }
+variable "eks_version" { default = "1.24" }
+variable "container_name" { default = "my-container" }
+variable "image_url" { default = "" }
+variable "container_port" { default = 80 }
+variable "cpu" { default = "256" }
+variable "memory" { default = "512" }
+variable "execution_role_arn" { default = "" }
+variable "task_role_arn" { default = "" }
+variable "desired_count" { default = 2 }
+variable "security_group" { default = "" }
