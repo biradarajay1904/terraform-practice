@@ -1,1 +1,0 @@
-{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"ecr","Source":"./modules/ECR","Dir":"modules/ECR"},{"Key":"network","Source":"./modules/vpc","Dir":""},{"Key":"rds","Source":"./modules/RDS","Dir":"modules/RDS"},{"Key":"vpc","Source":"./modules/VPC","Dir":"modules/VPC"}]}
