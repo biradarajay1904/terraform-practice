@@ -1,17 +1,18 @@
 provider "aws" { region = var.region }
 
-module "network" {
-  source         = "./modules/network"
+module "vpc" {
+  source         = "./modules/VPC"
   region         = var.region
   project        = var.project
   env            = var.env
   vpc_cidr       = var.vpc_cidr
   public_subnets = var.public_subnets
+  private_subnets= var.private_subnets
 }
 
 
 module "rds" {
-  source                    = "./modules/Rds"
+  source                    = "./modules/RDS"
   rds_allocated_storage     = var.rds_allocated_storage
   rds_engine                = var.rds_engine
   rds_engine_version        = var.rds_engine_version
